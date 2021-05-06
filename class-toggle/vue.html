@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle-class</title>
+
+    <style>
+      .newStyle {
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+      }
+    </style>
+
+
+</head>
+
+<body>
+
+<div id="app">
+  
+   <h1>Toggle Class with Vue.js</h1>   
+   
+   <p :class="{newStyle:toggle}">
+       Bangladesh's climate is tropical with a mild winter from October to  March, and a hot, humid summer from March to June.    
+   
+   </p>
+   
+   
+   <button @click="ourButton">
+           Click me
+   </button>
+
+</div>
+     
+ 
+
+
+<script src="https://unpkg.com/vue@next"></script>
+
+<script>
+
+
+// Toggle Class
+
+
+
+const hello = {
+  data() {
+    return {
+      toggle: false
+    }
+  },
+
+
+  methods: {
+      ourButton() {
+          this.toggle = !this.toggle
+      }
+  },
+
+
+}
+
+Vue.createApp(hello).mount('#app')
+
+</script>
+
+</body>
+</html>
+
+
