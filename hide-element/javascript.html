@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide-element</title>
+</head>
+
+<body>
+
+<div>
+  
+   <h1>Hide Element with Vanila JavaScript</h1>   
+   
+   <p class="hideMe">
+      Panchagarh is the northernmost district of Bangladesh.   
+
+   </p>
+   
+   
+   <button class="btn1">
+           Click me to hide the above paragraphs
+   </button>
+
+</div>
+     
+ 
+
+
+
+
+<script>
+
+
+// Hide Element
+
+const a = document.querySelector('.hideMe');
+const b = document.querySelector('.btn1');
+
+b.onclick = () => {
+    a.style.display = 'none';
+};
+
+
+
+
+</script>
+
+</body>
+</html>

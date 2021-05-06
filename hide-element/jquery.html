@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hide-element</title>
+</head>
+
+<body>
+
+
+  <div>
+  
+    <h1>Hide Element with Jquery</h1>   
+    
+    <p class="hideMe">
+       Panchagarh is the northernmost district of Bangladesh.   
+ 
+    </p>
+    
+    
+    <button class="btn1">
+            Click me to hide the above paragraphs
+    </button>
+ 
+ </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".btn1").click(function () {
+        $(".hideMe").hide();
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

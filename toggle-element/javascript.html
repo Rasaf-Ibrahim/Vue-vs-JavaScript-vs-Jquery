@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle-element</title>
+</head>
+
+<body
+ 
+
+
+<div>
+
+    <h1>Toggle Element with JavaScript</h1>   
+    
+    <p class="toggleMe">
+       Panchagarh is the northernmost district of Bangladesh.   
+
+    </p>
+    
+    
+    <button class="btn1">
+            Click me to toggle the above paragraphs
+    </button>
+ 
+ </div>
+ 
+
+
+
+<script>
+
+
+// Toggle Element
+const a = document.querySelector('.toggleMe');
+const b = document.querySelector('.btn1');
+
+b.onclick = () => {
+   if (a.style.display === "none") {
+    a.style.display = "block";
+  } else {
+    a.style.display = "none";
+  }
+};
+
+
+
+</script>
+
+</body>
+</html>
