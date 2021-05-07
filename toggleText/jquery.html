@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Text</title>
+</head>
+
+
+<body>
+
+
+  <div>
+
+    <h1>Toggle Text with Jquery</h1>
+
+
+    <p class="toggleMe">
+      White rice is the staple food of Bangladesh
+    </p>
+
+
+    <button class="ourButton">
+      Click
+    </button>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+
+
+  <script>
+    
+
+    $(document).ready(function () {
+
+
+      $(".ourButton").click(function () {
+
+
+        // Button's Text
+
+       if ($(this).text() == 'Again, Click Me'){
+
+          $(this).text('Click Me')
+        } 
+        
+        else {
+          $(this).text('Again, Click Me')
+        }
+
+
+        // Paragraph's Text
+
+
+        if ($(".toggleMe").text() == 'The Hilsa is the national fish of Bangladesh'){
+
+          $(".toggleMe").text('White rice is the staple food of Bangladesh')
+        } 
+        
+        else {
+          $(".toggleMe").text('The Hilsa is the national fish of Bangladesh')
+        }
+
+      
+
+
+        /*
+
+        // ***Same Code with Ternary***
+
+        
+        // Button's Text
+
+         $(this).text(
+
+          $(this).text() == 'Again, Click Me' 
+          ? 'Click Me' 
+          : 'Again, Click Me'
+
+          );
+
+         
+
+        // Paragraph's Text
+
+         $(".toggleMe").text(
+
+           $(".toggleMe").text() == 'The Hilsa is the national fish'
+           ? 'White rice is the staple of Bangladeshi cuisine' 
+           : 'The Hilsa is the national fish'
+
+           );
+
+
+        */
+
+      });
+
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>

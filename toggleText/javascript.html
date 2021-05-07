@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Text</title>
+</head>
+
+
+<body>
+
+
+  <div>
+
+    <h1>Toggle Text with JavaScript</h1>
+
+
+    <p class="toggleMe">
+      White rice is the staple food of Bangladesh
+    </p>
+
+
+    <button class="ourButton">
+      Click Me
+    </button>
+
+  </div>
+
+
+
+
+
+
+
+  <script>
+
+    let a = document.querySelector(".ourButton");
+    let b = document.querySelector(".toggleMe");
+
+    
+    a.addEventListener("click", ()=>{
+
+      // Button's Text
+
+      if (a.innerHTML === "Again, Click Me") {
+         a.innerHTML = "Click Me";
+      } else {
+         a.innerHTML = "Again, Click Me";
+      }
+
+
+      // Paragaraph's Text
+
+      if (b.innerHTML === "The Hilsa is the national fish of Bangladesh") {
+         b.innerHTML = "White rice is the staple food of Bangladesh";
+      } else {
+         b.innerHTML = "The Hilsa is the national fish of Bangladesh";
+      }
+
+   });
+    
+
+  </script>
+
+
+</body>
+
+</html>
