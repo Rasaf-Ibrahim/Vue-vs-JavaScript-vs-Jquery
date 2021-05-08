@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Text</title>
+</head>
+
+
+
+<body>
+
+  <div id="app">
+
+    <h1>Toggle Text with JavaScript</h1>
+
+
+    <p>
+
+        <div v-show= "text1">
+           White rice is the staple food of Bangladesh
+        </div>  
+
+        <div v-show= "text2">
+          The Hilsa is the national fish of Bangladesh
+        </div>
+      
+    </p>
+
+
+    <button @click="ourButton">
+
+        <div v-show= "text1">
+            Click Me
+         </div>
+    
+        <div v-show= "text2">
+           Again, Click Me
+        </div>
+
+    </button>
+
+  </div>
+     
+ 
+
+
+<script src="https://unpkg.com/vue@3.0.11"></script>
+
+<script>
+
+
+
+const hello = {
+
+  data() {
+    return {
+
+      text1: true,
+      text2: false
+      
+    }
+  },
+
+
+  methods: {
+      ourButton() {
+        
+          this.text1 = !this.text1
+          this.text2 = !this.text2
+      }
+  },
+
+
+}
+
+Vue.createApp(hello).mount('#app')
+
+</script>
+
+</body>
+</html>
+
+
