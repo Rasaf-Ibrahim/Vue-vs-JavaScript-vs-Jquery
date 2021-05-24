@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Active Class</title>
+</head>
+
+
+
+<style>
+  .active {
+    background-color: pink;
+  }
+</style>
+
+
+<body>
+
+
+  <div>
+
+    <div style="display:flex; justify-content: space-evenly;">
+
+      <div class="nav active">Home</div>
+      <div class="nav">About</div>
+      <div class="nav">Contact</div>
+      <div class="nav">Profile</div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+     $('.nav').click(function(){
+
+      $('.nav').removeClass("active");
+
+      $(this).addClass("active");
+
+     });
+
+   });
+
+  </script>
+
+
+</body>
+
+</html>
