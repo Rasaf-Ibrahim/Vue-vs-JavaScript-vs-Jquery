@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Active Class</title>
+
+  <style>
+    .active {
+      background-color: pink;
+    }
+  </style>
+
+<body>
+
+
+
+  <div id="app">
+
+    <div style="display:flex; justify-content: space-evenly;">
+
+      <div @click="item = 1" :class="{active:item == 1}">
+        Home
+      </div>
+
+      <div @click="item = 2" :class="{active:item == 2}">
+        About
+      </div>
+
+      <div @click="item = 3" :class="{active:item == 3}">
+        Contact
+      </div>
+
+      <div @click="item = 4" :class="{active:item == 4}">
+        Profile
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <script>
+
+    // Toggle Active Class
+
+
+
+    const hello = {
+
+      data() {
+        return {
+          item: undefined
+        }
+      }
+
+    }
+
+    Vue.createApp(hello).mount('#app')
+  </script>
+
+</body>
+
+</html>
