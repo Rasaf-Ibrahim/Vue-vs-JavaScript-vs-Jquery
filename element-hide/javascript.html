@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide-element</title>
+</head>
+
+<body>
+
+<div>
+  
+   <h1>Hide Element with Vanila JavaScript</h1>   
+   
+   <p class="hideMe">
+    Bangladesh shares land borders with India to the west, north, and east, Myanmar to the southeast, and the Bay of Bengal to the south. It is narrowly separated from Nepal and Bhutan by the Siliguri Corridor, and from China by Sikkim, in the north, respectively.  
+
+   </p>
+   
+   
+   <button class="btn1">
+           Click me to hide the above paragraph
+   </button>
+
+</div>
+     
+ 
+
+
+
+
+<script>
+
+
+// Hide Element
+
+const a = document.querySelector('.btn1');
+const b = document.querySelector('.hideMe');
+
+
+a.addEventListener('click', ()=>{
+
+    b.style.display = 'none';
+});
+   
+
+
+
+
+
+</script>
+
+</body>
+</html>

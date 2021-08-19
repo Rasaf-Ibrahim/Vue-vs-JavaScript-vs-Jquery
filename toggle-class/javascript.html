@@ -47,9 +47,11 @@
     const a = document.querySelector('.toggleMe');
     const b = document.querySelector('.ourButton');
 
-    b.onclick = () => {
+    b.addEventListener('click', ()=> {
+
       a.classList.toggle("newStyle")
-    };
+
+    });
 
 
   </script>

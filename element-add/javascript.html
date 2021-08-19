@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hide-element</title>
+    <title>add-element</title>
 </head>
 
 <body>
 
 <div>
   
-   <h1>Hide Element with Vanila JavaScript</h1>   
+   <h1>Add Element with Vanila JavaScript</h1>   
    
-   <p class="hideMe">
+   <p class="addMe" style="display:none">
     Bangladesh shares land borders with India to the west, north, and east, Myanmar to the southeast, and the Bay of Bengal to the south. It is narrowly separated from Nepal and Bhutan by the Siliguri Corridor, and from China by Sikkim, in the north, respectively.  
 
    </p>
    
    
    <button class="btn1">
-           Click me to hide the above paragraphs
+           Click me to add a paragraph above
    </button>
 
 </div>
@@ -33,14 +33,18 @@
 <script>
 
 
-// Hide Element
+// Add Element
 
-const a = document.querySelector('.hideMe');
-const b = document.querySelector('.btn1');
+const a = document.querySelector('.btn1');
+const b = document.querySelector('.addMe');
 
-b.onclick = () => {
-    a.style.display = 'none';
-};
+
+a.addEventListener('click', ()=>{
+
+    b.style.display = 'block';
+});
+   
+
 
 
 

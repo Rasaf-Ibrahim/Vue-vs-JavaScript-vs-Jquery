@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toggle Active Class</title>
+  <title>Active Class</title>
 </head>
-
 
 
 <style>
@@ -16,8 +15,8 @@
   }
 </style>
 
-
 <body>
+
 
 
   <div>
@@ -36,24 +35,34 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
   <script>
+  
+  // Active Class
 
-    $(document).ready(function(){
+  let navbar =  document.querySelectorAll('.nav')
 
-     $('.nav').click(function(){
+  navbar.forEach(element =>{
 
-      $('.nav').removeClass("active");
+    element.addEventListener('click', ()=>{
 
-      $(this).addClass("active");
+      navbar.forEach(part => part.classList.remove('active'))
 
-     });
+      element.classList.add('active')
 
-   });
+
+
+      // element.classList.add('active') or, this.classList.add('active') is same here. 
+
+
+    })
+
+  })
+
+ 
+
 
   </script>
-
 
 </body>
 

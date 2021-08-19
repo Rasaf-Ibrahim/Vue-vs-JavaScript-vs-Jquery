@@ -22,7 +22,7 @@
     
     
     <button class="btn1">
-            Click me to toggle the above paragraphs
+            Click me to toggle the above paragraph element
     </button>
  
  </div>
@@ -37,13 +37,16 @@
 const a = document.querySelector('.toggleMe');
 const b = document.querySelector('.btn1');
 
-b.onclick = () => {
-   if (a.style.display === "none") {
+b.addEventListener('click', ()=>{
+
+  if (a.style.display === "none") {
     a.style.display = "block";
   } else {
     a.style.display = "none";
   }
-};
+
+}) 
+ 
 
 
 
