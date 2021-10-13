@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hide-element</title>
+  <title>add-element</title>
 </head>
 
 <body>
@@ -13,16 +13,16 @@
 
   <div>
   
-    <h1>Hide Element with Jquery</h1>   
+    <h1>Add Element with Jquery</h1>   
     
-    <p class="hideMe">
+    <p class="paragraph_js" style="display:none">
       Bangladesh shares land borders with India to the west, north, and east, Myanmar to the southeast, and the Bay of Bengal to the south. It is narrowly separated from Nepal and Bhutan by the Siliguri Corridor, and from China by Sikkim, in the north, respectively.   
  
     </p>
     
     
-    <button class="btn1">
-      Click me to hide the above paragraph
+    <button class="btn_js">
+      Click me to add the above paragraph
     </button>
  
  </div>
@@ -34,15 +34,8 @@
 
   <script>
     $(document).ready(function () {
-      $(".btn1").click(function () {
-      $(".hideMe").css('display','none');
-   
-      // We can also use the following line instead of the previous line to hide element
-
-      // $(".hideMe").hide(); 
-
-      
-
+      $(".btn_js").click(function () {
+        $(".paragraph_js").css('display','block');
       });
     });
   </script>

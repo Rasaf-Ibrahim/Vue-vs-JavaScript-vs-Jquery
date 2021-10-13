@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>two-way-binding</title>
+</head>
+
+
+<body>
+
+  <h1 id='title_js'>Joypurhat</h1>
+
+  <input id="input_js" type="text">
+
+  
+
+  <script>
+
+
+const input=document.querySelector('#input_js')
+
+const title=document.querySelector('#title_js')
+
+
+twoWayBinding();
+
+function twoWayBinding() {
+  input.addEventListener('keyup', (event)=>{
+
+  title.innerText=event.target.value
+  
+ })
+
+}
+
+  </script>
+
+
+</body>
+</html>
+
+

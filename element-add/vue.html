@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-element</title>
+</head>
+
+<body>
+
+<div id="app">
+  
+   <h1>Add Element with Vue.js</h1>   
+   
+   <p v-if='show'>
+    Bangladesh shares land borders with India to the west, north, and east, Myanmar to the southeast, and the Bay of Bengal to the south. It is narrowly separated from Nepal and Bhutan by the Siliguri Corridor, and from China by Sikkim, in the north, respectively.   
+
+   </p>
+   
+   
+   <button @click="change">
+    Click me to hide the above paragraph
+   </button>
+
+</div>
+     
+ 
+
+
+<script src="https://unpkg.com/vue@next"></script>
+
+<script>
+
+
+// Hide Element
+
+
+
+const hello = {
+  data() {
+    return {
+      show: false
+    }
+  },
+
+
+  methods: {
+      change() {
+          this.show = true
+      }
+  },
+
+
+
+
+
+
+}
+
+Vue.createApp(hello).mount('#app')
+
+</script>
+
+</body>
+</html>

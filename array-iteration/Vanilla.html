@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two way data binding</title>
+</head>
+
+
+<body>
+
+  <ul id="list_js"> </ul>
+
+
+
+  <script>
+   
+  //  Array
+    const items = [    
+              { name: 'PSTU' },
+              { name: 'HSTU' },
+              { name: 'JUST' },
+              { name: 'NSTU' },
+              { name: 'PUST' }
+            ]
+
+  
+
+    // Selecting element
+    const list = document.querySelector("#list_js");
+
+
+    // Iterating 
+     items.forEach(item => {
+
+      let li = document.createElement('li');
+
+      li.textContent = item.name;
+
+      list.appendChild(li)
+  
+     });
+
+
+
+
+
+     
+  </script>
+
+
+</body>
+</html>
+
+
+
+
